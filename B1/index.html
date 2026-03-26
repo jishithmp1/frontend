@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #canvas {
+            margin: auto;
+            border: 1px solid black;
+            max-width: 100%;
+            max-height: 90%;
+        }
+        .btns {
+            margin: auto;
+        }
+        .btns button {
+            padding: 10px;
+            background-color: royalblue;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <canvas width="400" height="400" id="canvas"></canvas>
+    <div class="btns">
+        <button id="downloadBtn">Download</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
