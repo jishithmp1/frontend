@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B8</title>
+</head>
+<body>
+    <input type="checkbox" name="red" id="red">
+    <label for="red">red</label>
+
+     <input type="checkbox" name="green" id="green">
+    <label for="green">Green</label>
+
+     <input type="checkbox" name="blue" id="blue">
+    <label for="blue">Blue</label>
+
+    <button onclick="fusion()">Fusion</button>
+
+    <script>
+        const red = document.getElementById("red");
+        const blue = document.getElementById("blue");
+        const green = document.getElementById("green");
+
+        let isRed = false, isBlue = false, isGreen = false;
+
+        red.addEventListener("change", (e)=> {
+        isRed = e.target.checked;
+        })
+
+         blue.addEventListener("change", (e)=> {
+        isBlue = e.target.checked;
+        })
+
+         green.addEventListener("change", (e)=> {
+        isGreen = e.target.checked;
+        })
+        
+        function fusion() {
+            if (isRed && isBlue && isGreen) {
+                alert("white");
+            } else if (isRed && isGreen) {
+                alert("yellow")
+            } else if (isRed && isBlue) {
+                alert("purple")
+            } else if (isGreen && isBlue) {
+                alert("cyan")
+            } else if (isRed) {
+                alert("red")
+            } else if (isBlue) {
+                alert("blue")
+            } else if (isGreen) {
+                alert("green")
+            } else  {
+                alert("black")
+            }
+        }
+    </script>
+</body>
+</html>
