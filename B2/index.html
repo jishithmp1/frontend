@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #canvas {
+            border: 1px solid black;
+            max-width: 100%;
+            max-height: 90%;
+        }
+        .btns {
+            display: flex;
+            gap: 10px;
+        }
+        .btns button {
+            padding: 10px;
+            background-color: royalblue;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+        .btns #copyToClipboard {
+            background-color: white;
+            color: black;
+            border: 1px solid royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <div class="btns">
+        <button id="colorPreview">#000</button>
+        <button id="copyToClipboard">Copy Color</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
